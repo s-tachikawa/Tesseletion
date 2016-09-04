@@ -1,0 +1,522 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Library">
+      <UniqueIdentifier>{58bf2d07-1ddd-464e-9df3-cec58ea6e946}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Utility">
+      <UniqueIdentifier>{0815c665-67b0-44bb-bc13-4c257cbb6015}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Core">
+      <UniqueIdentifier>{620a817c-77ba-4084-be0b-0ad5a3e0a8de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Script">
+      <UniqueIdentifier>{40ba29b4-25cb-416f-b1b5-cec4598daa6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Script\Lua">
+      <UniqueIdentifier>{8ce807d0-cf4e-42f9-9e83-643fd0d8db95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Geometry">
+      <UniqueIdentifier>{e44caec3-2aef-4278-a523-6ffc6adc8e29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Geometry\Primitive">
+      <UniqueIdentifier>{ca7c0beb-c7a5-4e79-ac66-f8589539f42b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Graphics">
+      <UniqueIdentifier>{a15d5f3c-39f9-4628-9999-ad5814c2266f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Graphics\Device">
+      <UniqueIdentifier>{5bee18c8-a2f8-4b8a-a7c3-af00dd03752b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Graphics\2D">
+      <UniqueIdentifier>{16e12f6e-afb7-4ce0-a797-92d971dfb629}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Graphics\3D">
+      <UniqueIdentifier>{b600cafb-09f6-4730-be2a-97b23f37cb0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Graphics\3D\Model">
+      <UniqueIdentifier>{516e3099-de87-4906-90c7-7c8e54bb418a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Graphics\3D\Model\XFile">
+      <UniqueIdentifier>{61ece5d6-3b89-4ea6-91f6-fcc0d496ded8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Graphics\3D\Model\Bone">
+      <UniqueIdentifier>{94ab4c03-563d-434f-b96b-4b21c203c85c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Graphics\3D\Model\Sgd">
+      <UniqueIdentifier>{057a7af1-6620-4539-9b74-a2d49c6120e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Graphics\3D\Model\Fbx">
+      <UniqueIdentifier>{c0a08566-5a5f-4096-940f-ad165e086259}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Graphics\3D\Model\Pmd">
+      <UniqueIdentifier>{819ad262-74b6-47c2-9c79-a866603c94cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Graphics\Surface">
+      <UniqueIdentifier>{2a639678-c7fb-461d-a7a9-de2972785dcd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Graphics\Vertex">
+      <UniqueIdentifier>{59e70b2d-d4ba-4290-ba37-d3bd8ef73515}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Graphics\Material">
+      <UniqueIdentifier>{b6d64651-876d-4245-a6cd-939419c74cc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Graphics\Material\Sheder">
+      <UniqueIdentifier>{b2361162-b336-432c-8db9-0a23fdf069b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Io">
+      <UniqueIdentifier>{29c1dc96-7f61-4109-99ef-bba35fbbca21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Io\Input">
+      <UniqueIdentifier>{3c87bc22-b93d-4a48-a6cc-3c0a0e9b678e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Io\Input\Device">
+      <UniqueIdentifier>{7ac75680-6201-4a63-b117-a1267e0f709c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Math">
+      <UniqueIdentifier>{eda2e3f4-1e96-46c6-be6f-d492541b9579}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Sound">
+      <UniqueIdentifier>{6c3a99a6-afbe-43f7-b152-258c69218afa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Sound\Ogg">
+      <UniqueIdentifier>{9fc620a5-02ef-4269-bf96-970eae0a488d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Sound\Device">
+      <UniqueIdentifier>{9906731b-daf9-4820-9755-9c3354fae032}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Sound\Stream">
+      <UniqueIdentifier>{ac703b2b-ae94-4630-93f5-b062f69506d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Sound\Memory">
+      <UniqueIdentifier>{009cac3c-7781-4408-b902-7ea83751093a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Physics">
+      <UniqueIdentifier>{25f2b3e4-5197-4d28-a96e-ed9a14a3993c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\iruna.h">
+      <Filter>Library</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_system.h">
+      <Filter>Library</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_system_datas.h">
+      <Filter>Library</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_debag.h">
+      <Filter>Library\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_refernce_counter.h">
+      <Filter>Library\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_release.h">
+      <Filter>Library\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_types.h">
+      <Filter>Library\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_utility.h">
+      <Filter>Library\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_core.h">
+      <Filter>Library\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_dialog.h">
+      <Filter>Library\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_flame_manager.h">
+      <Filter>Library\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\iruna_window.h">
+      <Filter>Library\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_script.h">
+      <Filter>Library\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_lua_loader.h">
+      <Filter>Library\Script\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_debug_geometry.h">
+      <Filter>Library\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_geometry.h">
+      <Filter>Library\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_aabb.h">
+      <Filter>Library\Geometry\Primitive</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_line.h">
+      <Filter>Library\Geometry\Primitive</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_segment.h">
+      <Filter>Library\Geometry\Primitive</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_sphere.h">
+      <Filter>Library\Geometry\Primitive</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_graphics.h">
+      <Filter>Library\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\iruna_device.h">
+      <Filter>Library\Graphics\Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_device_controller.h">
+      <Filter>Library\Graphics\Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_sprite.h">
+      <Filter>Library\Graphics\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_text.h">
+      <Filter>Library\Graphics\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_bord.h">
+      <Filter>Library\Graphics\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_camera.h">
+      <Filter>Library\Graphics\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\iruna_animetion_base.h">
+      <Filter>Library\Graphics\3D\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_animetion_controller.h">
+      <Filter>Library\Graphics\3D\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_model_data.h">
+      <Filter>Library\Graphics\3D\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\iruna_model_decoder.h">
+      <Filter>Library\Graphics\3D\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_model_loader.h">
+      <Filter>Library\Graphics\3D\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_model_types.h">
+      <Filter>Library\Graphics\3D\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_model.h">
+      <Filter>Library\Graphics\3D\Model\XFile</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_bone.h">
+      <Filter>Library\Graphics\3D\Model\Bone</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_bone_texture.h">
+      <Filter>Library\Graphics\3D\Model\Bone</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_ik_bone.h">
+      <Filter>Library\Graphics\3D\Model\Bone</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\iruna_sgd_decoder.h">
+      <Filter>Library\Graphics\3D\Model\Sgd</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\iruna_fbx_decoder.h">
+      <Filter>Library\Graphics\3D\Model\Fbx</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\iruna_animetion_pmd.h">
+      <Filter>Library\Graphics\3D\Model\Pmd</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\iruna_pmd_decoder.h">
+      <Filter>Library\Graphics\3D\Model\Pmd</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\iruna_shader_pmd.h">
+      <Filter>Library\Graphics\3D\Model\Pmd</Filter>
+    </ClInclude>
+    <ClInclude Include="iruna_cube_texture.h">
+      <Filter>Library\Graphics\Surface</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_font.h">
+      <Filter>Library\Graphics\Surface</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_surface.h">
+      <Filter>Library\Graphics\Surface</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_texture.h">
+      <Filter>Library\Graphics\Surface</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_viewport.h">
+      <Filter>Library\Graphics\Surface</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_index_buffer.h">
+      <Filter>Library\Graphics\Vertex</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_vertex_buffer.h">
+      <Filter>Library\Graphics\Vertex</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_vertex_declaration.h">
+      <Filter>Library\Graphics\Vertex</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_color4.h">
+      <Filter>Library\Graphics\Material</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_material.h">
+      <Filter>Library\Graphics\Material</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_base_shader.h">
+      <Filter>Library\Graphics\Material\Sheder</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_domain_shader.h">
+      <Filter>Library\Graphics\Material\Sheder</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_efect.h">
+      <Filter>Library\Graphics\Material\Sheder</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_hull_shader.h">
+      <Filter>Library\Graphics\Material\Sheder</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_pixel_shader.h">
+      <Filter>Library\Graphics\Material\Sheder</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_vertex_shader.h">
+      <Filter>Library\Graphics\Material\Sheder</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_io.h">
+      <Filter>Library\Io</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_input_common.h">
+      <Filter>Library\Io\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\iruna_input_device.h">
+      <Filter>Library\Io\Input\Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\iruna_keyboard.h">
+      <Filter>Library\Io\Input\Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\iruna_mouse.h">
+      <Filter>Library\Io\Input\Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_math.h">
+      <Filter>Library\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_math_function.h">
+      <Filter>Library\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_matrix.h">
+      <Filter>Library\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_quaternion.h">
+      <Filter>Library\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_rect.h">
+      <Filter>Library\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_vector2.h">
+      <Filter>Library\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_vector3.h">
+      <Filter>Library\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_vector4.h">
+      <Filter>Library\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_sound.h">
+      <Filter>Library\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\iruna_ogg.h">
+      <Filter>Library\Sound\Ogg</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\iruna_sound_device.h">
+      <Filter>Library\Sound\Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_stream_sound.h">
+      <Filter>Library\Sound\Stream</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_memory_sound.h">
+      <Filter>Library\Sound\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_physics.h">
+      <Filter>Library\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\iruna_physics_core.h">
+      <Filter>Library\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_physics_rigid_body.h">
+      <Filter>Library\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_physics_rigid_box.h">
+      <Filter>Library\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_physics_rigid_spher.h">
+      <Filter>Library\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_physics_rigid_static_plane.h">
+      <Filter>Library\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\iruna_physics_rigid_struct.h">
+      <Filter>Library\Physics</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\iruna_system.cpp">
+      <Filter>Library</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\iruna_daialog.cpp">
+      <Filter>Library\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\iruna_flame_manager.cpp">
+      <Filter>Library\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\iruna_window.cpp">
+      <Filter>Library\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\iruna_lua_loader.cpp">
+      <Filter>Library\Script\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\iruna_debug_geometry.cpp">
+      <Filter>Library\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\iruna_aabb.cpp">
+      <Filter>Library\Geometry\Primitive</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\iruna_line.cpp">
+      <Filter>Library\Geometry\Primitive</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\iruna_segment.cpp">
+      <Filter>Library\Geometry\Primitive</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\iruna_sphere.cpp">
+      <Filter>Library\Geometry\Primitive</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\iruna_device.cpp">
+      <Filter>Library\Graphics\Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\iruna_device_controller.cpp">
+      <Filter>Library\Graphics\Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\iruna_sprite.cpp">
+      <Filter>Library\Graphics\2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\iruna_text.cpp">
+      <Filter>Library\Graphics\2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\iruna_bord.cpp">
+      <Filter>Library\Graphics\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\iruna_camera.cpp">
+      <Filter>Library\Graphics\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\iruna_animetion_controller.cpp">
+      <Filter>Library\Graphics\3D\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\iruna_model_loader.cpp">
+      <Filter>Library\Graphics\3D\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\iruna_model.cpp">
+      <Filter>Library\Graphics\3D\Model\XFile</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\iruna_bone.cpp">
+      <Filter>Library\Graphics\3D\Model\Bone</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\iruna_bone_texture.cpp">
+      <Filter>Library\Graphics\3D\Model\Bone</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\iruna_ik_bone.cpp">
+      <Filter>Library\Graphics\3D\Model\Bone</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\iruna_sgd_decoder.cpp">
+      <Filter>Library\Graphics\3D\Model\Sgd</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\iruna_fbx_decoder.cpp">
+      <Filter>Library\Graphics\3D\Model\Fbx</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\iruna_animetion_pmd.cpp">
+      <Filter>Library\Graphics\3D\Model\Pmd</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\iruna_pmd_decoder.cpp">
+      <Filter>Library\Graphics\3D\Model\Pmd</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\iruna_shader_pmd.cpp">
+      <Filter>Library\Graphics\3D\Model\Pmd</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\iruna_cube_texture.cpp">
+      <Filter>Library\Graphics\Surface</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\iruna_font.cpp">
+      <Filter>Library\Graphics\Surface</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\iruna_surface.cpp">
+      <Filter>Library\Graphics\Surface</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\iruna_texture.cpp">
+      <Filter>Library\Graphics\Surface</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\iruna_viewport.cpp">
+      <Filter>Library\Graphics\Surface</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\iruna_index_buffer.cpp">
+      <Filter>Library\Graphics\Vertex</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\iruna_vertex_buffer.cpp">
+      <Filter>Library\Graphics\Vertex</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\iruna_vertex_declaration.cpp">
+      <Filter>Library\Graphics\Vertex</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\iruna_color4.cpp">
+      <Filter>Library\Graphics\Material</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\iruna_material.cpp">
+      <Filter>Library\Graphics\Material</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\iruna_base_shader.cpp">
+      <Filter>Library\Graphics\Material\Sheder</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\iruna_domain_shader.cpp">
+      <Filter>Library\Graphics\Material\Sheder</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\iruna_efect.cpp">
+      <Filter>Library\Graphics\Material\Sheder</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\iruna_hull_shader.cpp">
+      <Filter>Library\Graphics\Material\Sheder</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\iruna_pixel_shader.cpp">
+      <Filter>Library\Graphics\Material\Sheder</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\iruna_vertex_shader.cpp">
+      <Filter>Library\Graphics\Material\Sheder</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\iruna_input_common.cpp">
+      <Filter>Library\Io\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\iruna_inpu_device.cpp">
+      <Filter>Library\Io\Input\Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\iruna_keyboard.cpp">
+      <Filter>Library\Io\Input\Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\iruna_mouse.cpp">
+      <Filter>Library\Io\Input\Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\iruna_math_function.cpp">
+      <Filter>Library\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\iruna_matrix.cpp">
+      <Filter>Library\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\iruna_ogg.cpp">
+      <Filter>Library\Sound\Ogg</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\iruna_sound_device.cpp">
+      <Filter>Library\Sound\Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\iruna_stream_sound.cpp">
+      <Filter>Library\Sound\Stream</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\iruna_memory_sound.cpp">
+      <Filter>Library\Sound\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\iruna_physics_core.cpp">
+      <Filter>Library\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\iruna_physics_rigid_box.cpp">
+      <Filter>Library\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\iruna_physics_rigid_spher.cpp">
+      <Filter>Library\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\iruna_physics_rigid_static_plane.cpp">
+      <Filter>Library\Physics</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

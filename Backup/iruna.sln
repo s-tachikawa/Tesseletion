@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "iruna", "iruna\iruna.vcproj", "{6E093330-F2AD-450F-AF0A-94686FE9B81C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test", "test\test.vcproj", "{FC235A51-38DE-4023-B5FD-7A5C7D862FDC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6E093330-F2AD-450F-AF0A-94686FE9B81C} = {6E093330-F2AD-450F-AF0A-94686FE9B81C}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6E093330-F2AD-450F-AF0A-94686FE9B81C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6E093330-F2AD-450F-AF0A-94686FE9B81C}.Debug|Win32.Build.0 = Debug|Win32
+		{6E093330-F2AD-450F-AF0A-94686FE9B81C}.Release|Win32.ActiveCfg = Release|Win32
+		{6E093330-F2AD-450F-AF0A-94686FE9B81C}.Release|Win32.Build.0 = Release|Win32
+		{FC235A51-38DE-4023-B5FD-7A5C7D862FDC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FC235A51-38DE-4023-B5FD-7A5C7D862FDC}.Debug|Win32.Build.0 = Debug|Win32
+		{FC235A51-38DE-4023-B5FD-7A5C7D862FDC}.Release|Win32.ActiveCfg = Release|Win32
+		{FC235A51-38DE-4023-B5FD-7A5C7D862FDC}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

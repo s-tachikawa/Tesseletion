@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6E093330-F2AD-450F-AF0A-94686FE9B81C}</ProjectGuid>
+    <RootNamespace>iruna</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>../iruna/Depend/libvorbis/include/;../iruna/Depend/include/;../iruna/Depend/libogg/include/;../iruna/Depend/include/fbxfilesdk/components/kbaselib;../iruna/Depend/src/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;K_PLUGIN;K_FBXSDK;K_NODLL;_CRT_SECURE_NO_DEPRECATE;KARCH_ENV_WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName)_d.lib</OutputFile>
+      <AdditionalLibraryDirectories>../iruna/Depend/Library/;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>/NODEFAULTLIB:libcmt.lib;/NODEFAULTLIB:msvcrt.lib;/NODEFAULTLIB:libcd.lib;/NODEFAULTLIB:msvcrtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>../iruna/Depend/libvorbis/include/;../iruna/Depend/include/;../iruna/Depend/libogg/include/;../iruna/Depend/include/fbxfilesdk/components/kbaselib;../iruna/Depend/src/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;K_PLUGIN;K_FBXSDK;K_NODLL;_CRT_SECURE_NO_DEPRECATE;KARCH_ENV_WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DebugInformationFormat />
+    </ClCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>../iruna/Depend/Library/;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>/NODEFAULTLIB:library;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\iruna.h" />
+    <ClInclude Include="Include\iruna_aabb.h" />
+    <ClInclude Include="Include\iruna_animetion_controller.h" />
+    <ClInclude Include="Include\iruna_base_shader.h" />
+    <ClInclude Include="Include\iruna_bone.h" />
+    <ClInclude Include="Include\iruna_bone_texture.h" />
+    <ClInclude Include="Include\iruna_bord.h" />
+    <ClInclude Include="Include\iruna_camera.h" />
+    <ClInclude Include="Include\iruna_color4.h" />
+    <ClInclude Include="Include\iruna_core.h" />
+    <ClInclude Include="Include\iruna_debag.h" />
+    <ClInclude Include="Include\iruna_debug_geometry.h" />
+    <ClInclude Include="Include\iruna_device_controller.h" />
+    <ClInclude Include="Include\iruna_dialog.h" />
+    <ClInclude Include="Include\iruna_domain_shader.h" />
+    <ClInclude Include="Include\iruna_efect.h" />
+    <ClInclude Include="Include\iruna_flame_manager.h" />
+    <ClInclude Include="Include\iruna_font.h" />
+    <ClInclude Include="Include\iruna_geometry.h" />
+    <ClInclude Include="Include\iruna_graphics.h" />
+    <ClInclude Include="Include\iruna_hull_shader.h" />
+    <ClInclude Include="Include\iruna_ik_bone.h" />
+    <ClInclude Include="Include\iruna_index_buffer.h" />
+    <ClInclude Include="Include\iruna_input_common.h" />
+    <ClInclude Include="Include\iruna_io.h" />
+    <ClInclude Include="Include\iruna_line.h" />
+    <ClInclude Include="Include\iruna_lua_loader.h" />
+    <ClInclude Include="Include\iruna_material.h" />
+    <ClInclude Include="Include\iruna_math.h" />
+    <ClInclude Include="Include\iruna_math_function.h" />
+    <ClInclude Include="Include\iruna_matrix.h" />
+    <ClInclude Include="Include\iruna_memory_sound.h" />
+    <ClInclude Include="Include\iruna_model.h" />
+    <ClInclude Include="Include\iruna_model_data.h" />
+    <ClInclude Include="Include\iruna_model_loader.h" />
+    <ClInclude Include="Include\iruna_model_types.h" />
+    <ClInclude Include="Include\iruna_physics.h" />
+    <ClInclude Include="Include\iruna_physics_rigid_body.h" />
+    <ClInclude Include="Include\iruna_physics_rigid_box.h" />
+    <ClInclude Include="Include\iruna_physics_rigid_spher.h" />
+    <ClInclude Include="Include\iruna_physics_rigid_static_plane.h" />
+    <ClInclude Include="Include\iruna_physics_rigid_struct.h" />
+    <ClInclude Include="Include\iruna_pixel_shader.h" />
+    <ClInclude Include="Include\iruna_quaternion.h" />
+    <ClInclude Include="Include\iruna_rect.h" />
+    <ClInclude Include="Include\iruna_refernce_counter.h" />
+    <ClInclude Include="Include\iruna_release.h" />
+    <ClInclude Include="Include\iruna_script.h" />
+    <ClInclude Include="Include\iruna_segment.h" />
+    <ClInclude Include="Include\iruna_sound.h" />
+    <ClInclude Include="Include\iruna_sphere.h" />
+    <ClInclude Include="Include\iruna_sprite.h" />
+    <ClInclude Include="Include\iruna_stream_sound.h" />
+    <ClInclude Include="Include\iruna_surface.h" />
+    <ClInclude Include="Include\iruna_system.h" />
+    <ClInclude Include="Include\iruna_system_datas.h" />
+    <ClInclude Include="Include\iruna_text.h" />
+    <ClInclude Include="Include\iruna_texture.h" />
+    <ClInclude Include="Include\iruna_types.h" />
+    <ClInclude Include="Include\iruna_utility.h" />
+    <ClInclude Include="Include\iruna_vector2.h" />
+    <ClInclude Include="Include\iruna_vector3.h" />
+    <ClInclude Include="Include\iruna_vector4.h" />
+    <ClInclude Include="Include\iruna_vertex_buffer.h" />
+    <ClInclude Include="Include\iruna_vertex_declaration.h" />
+    <ClInclude Include="Include\iruna_vertex_shader.h" />
+    <ClInclude Include="Include\iruna_viewport.h" />
+    <ClInclude Include="iruna_cube_texture.h" />
+    <ClInclude Include="Source\iruna_animetion_base.h" />
+    <ClInclude Include="Source\iruna_animetion_pmd.h" />
+    <ClInclude Include="Source\iruna_device.h" />
+    <ClInclude Include="Source\iruna_fbx_decoder.h" />
+    <ClInclude Include="Source\iruna_input_device.h" />
+    <ClInclude Include="Source\iruna_keyboard.h" />
+    <ClInclude Include="Source\iruna_model_decoder.h" />
+    <ClInclude Include="Source\iruna_mouse.h" />
+    <ClInclude Include="Source\iruna_ogg.h" />
+    <ClInclude Include="Source\iruna_physics_core.h" />
+    <ClInclude Include="Source\iruna_pmd_decoder.h" />
+    <ClInclude Include="Source\iruna_sgd_decoder.h" />
+    <ClInclude Include="Source\iruna_shader_pmd.h" />
+    <ClInclude Include="Source\iruna_sound_device.h" />
+    <ClInclude Include="Source\iruna_window.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\iruna_aabb.cpp" />
+    <ClCompile Include="Source\iruna_animetion_controller.cpp" />
+    <ClCompile Include="Source\iruna_animetion_pmd.cpp" />
+    <ClCompile Include="Source\iruna_base_shader.cpp" />
+    <ClCompile Include="Source\iruna_bone.cpp" />
+    <ClCompile Include="Source\iruna_bone_texture.cpp" />
+    <ClCompile Include="Source\iruna_bord.cpp" />
+    <ClCompile Include="Source\iruna_camera.cpp" />
+    <ClCompile Include="Source\iruna_color4.cpp" />
+    <ClCompile Include="Source\iruna_cube_texture.cpp" />
+    <ClCompile Include="Source\iruna_daialog.cpp" />
+    <ClCompile Include="Source\iruna_debug_geometry.cpp" />
+    <ClCompile Include="Source\iruna_device.cpp" />
+    <ClCompile Include="Source\iruna_device_controller.cpp" />
+    <ClCompile Include="Source\iruna_domain_shader.cpp" />
+    <ClCompile Include="Source\iruna_efect.cpp" />
+    <ClCompile Include="Source\iruna_fbx_decoder.cpp" />
+    <ClCompile Include="Source\iruna_flame_manager.cpp" />
+    <ClCompile Include="Source\iruna_font.cpp" />
+    <ClCompile Include="Source\iruna_hull_shader.cpp" />
+    <ClCompile Include="Source\iruna_ik_bone.cpp" />
+    <ClCompile Include="Source\iruna_index_buffer.cpp" />
+    <ClCompile Include="Source\iruna_input_common.cpp" />
+    <ClCompile Include="Source\iruna_inpu_device.cpp" />
+    <ClCompile Include="Source\iruna_keyboard.cpp" />
+    <ClCompile Include="Source\iruna_line.cpp" />
+    <ClCompile Include="Source\iruna_lua_loader.cpp" />
+    <ClCompile Include="Source\iruna_material.cpp" />
+    <ClCompile Include="Source\iruna_math_function.cpp" />
+    <ClCompile Include="Source\iruna_matrix.cpp" />
+    <ClCompile Include="Source\iruna_memory_sound.cpp" />
+    <ClCompile Include="Source\iruna_model.cpp" />
+    <ClCompile Include="Source\iruna_model_loader.cpp" />
+    <ClCompile Include="Source\iruna_mouse.cpp" />
+    <ClCompile Include="Source\iruna_ogg.cpp" />
+    <ClCompile Include="Source\iruna_physics_core.cpp" />
+    <ClCompile Include="Source\iruna_physics_rigid_box.cpp" />
+    <ClCompile Include="Source\iruna_physics_rigid_spher.cpp" />
+    <ClCompile Include="Source\iruna_physics_rigid_static_plane.cpp" />
+    <ClCompile Include="Source\iruna_pixel_shader.cpp" />
+    <ClCompile Include="Source\iruna_pmd_decoder.cpp" />
+    <ClCompile Include="Source\iruna_segment.cpp" />
+    <ClCompile Include="Source\iruna_sgd_decoder.cpp" />
+    <ClCompile Include="Source\iruna_shader_pmd.cpp" />
+    <ClCompile Include="Source\iruna_sound_device.cpp" />
+    <ClCompile Include="Source\iruna_sphere.cpp" />
+    <ClCompile Include="Source\iruna_sprite.cpp" />
+    <ClCompile Include="Source\iruna_stream_sound.cpp" />
+    <ClCompile Include="Source\iruna_surface.cpp" />
+    <ClCompile Include="Source\iruna_system.cpp" />
+    <ClCompile Include="Source\iruna_text.cpp" />
+    <ClCompile Include="Source\iruna_texture.cpp" />
+    <ClCompile Include="Source\iruna_vertex_buffer.cpp" />
+    <ClCompile Include="Source\iruna_vertex_declaration.cpp" />
+    <ClCompile Include="Source\iruna_vertex_shader.cpp" />
+    <ClCompile Include="Source\iruna_viewport.cpp" />
+    <ClCompile Include="Source\iruna_window.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
